@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Understanding Tommy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=IM Bodini Poster|Didot|Playfair Display" rel="stylesheet">
+  <style> 
+    
+    @font-face{
+      font-family: "Bodini Poster", serif;
+    }
+    
+    @font-face{
+      font-family: "Didot", serif;
+    }
+    
+     @font-face{
+      font-family: "Playfair Display", serif;
+    }
+    
+          .Header1 {
+        font-family: "Bodini Poster", serif;
+        font-size: 400%;
+        color: white;
+        font-weight: 900;
+        text-align: left;
+        
+      }
+    
+    .Header2{
+      font-family: "Playfair Display", serif;
+        font-size: 25px;
+        color: white;
+        font-weight: 900;
+        text-align: left;
+      padding: 20px;
+    }
+      
+      .Body1 {
+        font-family: "Didot", serif;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+        text-align: left;
+        padding: 20px;
+    }
+    
+    .Body2 {
+      font-family: "Playfair Display", serif;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+    }
+
+    ul.sidenav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      background-color: black;
+      position: fixed;
+      height: 100%;
+      overflow: inherit;
+      color: white;
+    }
+
+    ul.sidenav li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: grey;
+    }
+
+    ul.sidenav li a.active {
+      background-color: black;
+      color: white;
+    }
+
+    ul.sidenav li a:hover:not(.active) {
+      background-color: black;
+      color: white;
+    }
+
+    div.content {
+      margin-left: 25%;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+
+    @media screen and (max-width: 900px) {
+      ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        color: white;
+      }
+
+      ul.sidenav li a {
+        float: left;
+        padding: 15px;
+        color: grey;
+      }
+
+      div.content {margin-left: 0;}
+    }
+
+    @media screen and (max-width: 400px) {
+      ul.sidenav li a {
+        text-align: center;
+        float: none;
+      }
+    }
+      
+    body {
+      background-color: black;
+    }
+    
+    .home{
+    position: relative;
+    }
+    
+    img
+    {
+    position: relative;
+    left: -8%;
+    width: auto; 
+    height: 76%; 
+    }
+    
+  	.text {
+ 	 	position: fixed;
+  	top: 20%;
+  	left: 50%;
+  	background-color: black;
+  	color: white;
+		}
+
+      position: left;
+      width: auto;
+      height: 300px;
+      bottom: auto;
+      left: 516px;
+      border: 5px white solid;
+  </style>
+</head>
+
+<body>
+  <nav>
+    
+  <ul class="sidenav">
+    <li><a href="https://tommyjasson.github.io/MainProject2" class="Body2"> Home</a></li>
+    <li><a href="#Hobbies" class="Body2"> About Me</a></li>
+    <li><a href="https://tommyjasson.github.io/Interests" class="Body2"> Interests</a></li>
+    <li><a class="active Body2" href="#Hobbies"> Hobbies</a></li>
+    <li><a href="#Projects" class="Body2"> Projects</a></li>
+    <li><a href="#Contact" class="Body2"> Contact</a></li>
+  </ul>
+  </nav>
+
+  <div class="content">
+    <div id="home">
+    <div class="img">
+      <img src="Tommy (1).png" alt="Homepage">
+        <div class="text"> 
+        <h1 class="Header1"> Understanding Tommy </h1>
+          <p class="Header2"> This Website was created so that anyone get to know me and who i am alittle more.</p>
+          <h2 class="Body1"> By Tommy Jasson</h2>
+        </div>
+    </div>  
+    </div>
+	</div>  
+</body>
+
+</html>
