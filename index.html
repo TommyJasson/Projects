@@ -21,10 +21,9 @@
     
           .Header1 {
         font-family: "Bodini Poster", serif;
-        font-size: 400%;
+        font-size: 500%;
         color: white;
         font-weight: 900;
-        text-align: left;
         
       }
     
@@ -42,7 +41,6 @@
         font-size: 20px;
         color: white;
         font-weight: 500;
-        text-align: left;
         padding: 20px;
     }
     
@@ -53,6 +51,11 @@
         font-weight: 500;
     }
 
+      
+    a {
+      color: pink;    
+    }
+    
     ul.sidenav {
       list-style-type: none;
       margin: 0;
@@ -83,7 +86,7 @@
     }
 
     div.content {
-      margin-left: 25%;
+      margin-left: 100px;
       padding: 1px 16px;
       height: 1000px;
     }
@@ -120,28 +123,80 @@
     position: relative;
     }
     
-    img
-    {
-    position: relative;
-    left: -8%;
-    width: auto; 
-    height: 76%; 
-    }
-    
-  	.text {
- 	 	position: fixed;
-  	top: 20%;
+  	.text1 {
+     text-align: center;
+      top: 20%;
   	left: 50%;
   	background-color: black;
   	color: white;
+    padding: 15px;
 		}
-
-      position: left;
-      width: auto;
-      height: 300px;
-      bottom: auto;
-      left: 516px;
-      border: 5px white solid;
+    
+    .text2 {
+     text-align: center;
+      max-width: 95%;
+      height: 25%;
+  	background-color: black;
+  	color: white;
+		}
+    
+    .text3 {
+     text-align: center;
+      max-width: 95%;
+      height: 25%;
+  	background-color: black;
+  	color: white;
+		}
+    
+    .img1 {
+    position: absolute;
+    top: 26%;
+    left: 42%;
+    max-width: 40%; 
+    max-height: 40%; 
+    border: 5px white groove
+    }
+    
+    .img2 {
+   position: absolute;
+    top: 100%;
+    left: 10%;
+    max-width: 40%; 
+    max-height: 40%; 
+    border: 5px white groove
+    }
+    
+     .img3 {
+   position: absolute;
+    top: 100%;
+    left: 60%;
+    max-width: 30%; 
+    max-height: 30%; 
+    border: 5px white groove
+    }
+    
+      .img4 {
+   position: absolute;
+    top: 100%;
+    left: 60%;
+    max-width: 30%; 
+    max-height: 30%; 
+    border: 5px white groove
+    }
+    
+      .img5 {
+   position: absolute;
+    top: 100%;
+    left: 60%;
+    max-width: 30%; 
+    max-height: 30%; 
+    border: 5px white groove
+    }
+    
+    .container{
+      position: relative;
+        height: 10px;
+    }
   </style>
 </head>
 
@@ -149,27 +204,52 @@
   <nav>
     
   <ul class="sidenav">
-    <li><a href="https://tommyjasson.github.io/MainProject2" class="Body2"> Home</a></li>
-    <li><a href="#Hobbies" class="Body2"> About Me</a></li>
-    <li><a href="https://tommyjasson.github.io/Interests" class="Body2"> Interests</a></li>
-    <li><a href="#Projects" class="Body2"> Hobbies</a></li>
-    <li><a class="active Body2" href="#Projects"> Projects</a></li>
+    <li><a href="Home" class="Body2"> Home</a></li>
+    <li><a href="About Me" class="Body2"> About Me</a></li>
+    <li><a class="active Body2" href="#Interests"> Interests</a></li>
+    <li><a href="#Projects" class="Body2"> Projects</a></li>
     <li><a href="#Contact" class="Body2"> Contact</a></li>
   </ul>
   </nav>
 
   <div class="content">
+    <div class="container">
+      
+    </div>
     <div id="home">
-    <div class="img">
-      <img src="Tommy (1).png" alt="Homepage">
-        <div class="text"> 
-        <h1 class="Header1"> Understanding Tommy </h1>
-          <p class="Header2"> This Website was created so that anyone get to know me and who i am alittle more.</p>
-          <h2 class="Body1"> By Tommy Jasson</h2>
+    
+        <div class="text3"> 
+          
+        <h1 class="text1 Header1"> My Projects </h1>          
+
+          <p class="text2 Body1"> These are projects i've worked on for a long time, these are my best pieces i believe and they are what represents what im capable of best.
+          </p>
+          
+          <img class="img1" src="IMG_2533.jpg" alt="About Me">
+
+          <p class="text3 Body1"> hehhehehhe
+          </p>
+          
+          <img class="img1" src="IMG_2533.jpg" alt="About Me">
+
+          <p class="text3 Body1"> hehhehehhe
+          </p>
+          
+          <img class="img1" src="IMG_2533.jpg" alt="About Me">
+
+          <p class="text3 Body1"> hehhehehhe
+          </p>
+          
+          <img class="img1" src="IMG_2533.jpg" alt="About Me">
+
+          <p class="text3 Body1"> hehhehehhe
+          </p>
+          
+          <img class="img1" src="IMG_2533.jpg" alt="About Me">
+
         </div>
     </div>  
     </div>
-	</div>  
 </body>
 
 </html>
