@@ -1,260 +1,264 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>Understanding Tommy</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <head>
+    <title>Understanding Tommy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=IM Bodini Poster|Didot|Playfair Display" rel="stylesheet">
-  <style> 
-    
-    @font-face{
-      font-family: "Bodini Poster", serif;
-    }
-    
-    @font-face{
-      font-family: "Didot", serif;
-    }
-    
-     @font-face{
-      font-family: "Playfair Display", serif;
-    }
-    
-          .Header1 {
+    <style>
+      @font-face {
         font-family: "Bodini Poster", serif;
-        font-size: 500%;
+      }
+
+      @font-face {
+        font-family: "Didot", serif;
+      }
+
+      @font-face {
+        font-family: "Playfair Display", serif;
+      }
+
+      .Header1 {
+        font-family: "Bodini Poster", serif;
+        font-size: 400%;
         color: white;
         font-weight: 900;
-        
+
       }
-    
-    .Header2{
-      font-family: "Playfair Display", serif;
+
+      .Header2 {
+        font-family: "Playfair Display", serif;
         font-size: 25px;
         color: white;
         font-weight: 900;
         text-align: left;
-      padding: 20px;
-    }
-      
+        padding: 20px;
+      }
+
       .Body1 {
         font-family: "Didot", serif;
         font-size: 20px;
         color: white;
         font-weight: 500;
         padding: 20px;
-    }
-    
-    .Body2 {
-      font-family: "Playfair Display", serif;
+      }
+
+      .Body2 {
+        font-family: "Playfair Display", serif;
         font-size: 20px;
         color: white;
         font-weight: 500;
-    }
+      }
 
-      
-    a {
-      color: pink;    
-    }
-    
-    ul.sidenav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 15%;
-      background-color: black;
-      position: fixed;
-      height: 100%;
-      overflow: inherit;
-      color: white;
-    }
+      a {
+        color: pink;
+      }
 
-    ul.sidenav li a {
-      display: block;
-      padding: 8px 16px;
-      text-decoration: none;
-      color: grey;
-    }
-
-    ul.sidenav li a.active {
-      background-color: black;
-      color: white;
-    }
-
-    ul.sidenav li a:hover:not(.active) {
-      background-color: black;
-      color: white;
-    }
-
-    div.content {
-      margin-left: 100px;
-      padding: 1px 16px;
-      height: 1000px;
-    }
-
-    @media screen and (max-width: 900px) {
       ul.sidenav {
-        width: 100%;
-        height: auto;
-        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: black;
+        position: fixed;
+        height: 100%;
+        overflow: inherit;
         color: white;
       }
 
       ul.sidenav li a {
-        float: left;
-        padding: 15px;
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
         color: grey;
       }
 
-      div.content {margin-left: 0;}
-    }
-
-    @media screen and (max-width: 400px) {
-      ul.sidenav li a {
-        text-align: center;
-        float: none;
+      ul.sidenav li a.active {
+        background-color: black;
+        color: white;
       }
-    }
-      
-    body {
-      background-color: black;
-    }
-    
-    .home{
-    position: relative;
-    }
-    
-  	.text1 {
-     text-align: center;
-      top: 20%;
-  	left: 50%;
-  	background-color: black;
-  	color: white;
-    padding: 15px;
-		}
-    
-    .text2 {
-     text-align: left;
-      max-width: 95%;
-      height: 70%;
-  background-color: black;
-  	color: white;
-		}
-    
-    .text3 {
-     text-align: right;
-      max-width: 95%;
-      height: 50%;
-  	background-color: black;
-  	color: white;
-		}
-    
-     .text4 {
-      text-align: left;
-      max-width: 90%;
-      height: 50%;
-  	background-color: black;
-  	color: white;
-		}
-    
-     .text5 {
-      text-align: right;
-      max-width: 90%;
-      height: 50%;
-  	background-color: black;
-  	color: white;
-		}
-    
-    .img1 {
-    position: absolute;
-    top: 60%;
-    left: 45%;
-    max-width: 40%; 
-    border: 5px white groove
-    }
-    
-    .img2 {
-   position: absolute;
-    top: 105%;
-    left: 15%;
-    max-width: auto;
-    height: 30%;
-    border: 5px white groove
-    }
-    
-     .img3 {
-   position: absolute;
-    top: 145%;
-    left: 38%;
-    max-width: auto; 
-      max-height: 30%;
-    border: 5px white groove
-    }
-    
+
+      ul.sidenav li a:hover:not(.active) {
+        background-color: black;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+
+      @media screen and (max-width: 900px) {
+        ul.sidenav {
+          width: 100%;
+          height: auto;
+          position: relative;
+          color: white;
+        }
+
+        ul.sidenav li a {
+          float: left;
+          padding: 15px;
+          color: grey;
+        }
+
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        ul.sidenav li a {
+          text-align: center;
+          float: none;
+        }
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .home {
+        position: fixed;
+      }
+
+      .text1 {
+        text-align: center;
+        max-width: 100%;
+        max-height: 200%;
+        color: white;
+        padding: 20px;
+      }
+
+      .text2 {
+        position: relative;
+        text-align: left;
+        left: 15%;
+        width: 55%;
+        color: white;
+      }
+
+      .text3 {
+     position: relative;
+        text-align: left;
+        left: 15%;
+        width: 70%;
+        color: white;
+      }
+
+      .text4 {
+       position: relative;
+        text-align: left;
+        left: 15%;
+        width: 70%;
+        color: white;
+      }
+
+      .text5 {
+         position: relative;
+        text-align: left;
+        left: 15%;
+        width: 70%;
+        color: white;
+      }
+
+      .img1 {
+        position: relative;
+        top: 45%;
+        left: -90%;
+        max-width: 190%;
+        border: 5px white groove
+      }
+
+      .img2 {
+        position: relative;
+        top: 110%;
+        left: -90%;
+        max-width: 190%;
+        border: 5px white groove
+      }
+
+      .img3 {
+        position: relative;
+        top: 45%;
+        left: -90%;
+        max-width: 190%;
+        border: 5px white groove
+      }
+
       .img4 {
-   position: absolute;
-    top: 185%;
-    left: 15%;
-    max-width: 30%; 
-    max-height: 100%; 
-    border: 5px white groove
-    }
-    
-    .container{
-      position: relative;
-        height: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <nav>
-    
-  <ul class="sidenav">
-    <li><a href="Home" class="Body2"> Home</a></li>
-    <li><a href="About Me" class="Body2"> About Me</a></li>
-    <li><a class="active Body2" href="#Interests"> Interests</a></li>
-    <li><a href="#Projects" class="Body2"> Projects</a></li>
-    <li><a href="#Contact" class="Body2"> Contact</a></li>
-  </ul>
-  </nav>
-
-  <div class="content">
-    <div class="container">
+        position: relative;
+        top: 45%;
+        left: -90%;
+        max-width: 190%;
+        border: 5px white groove
+      }
       
-    </div>
-    <div id="home">
-    
-        <div class="text3"> 
-          
-        <h1 class="text1 Header1"> My Projects </h1>          
+      table {
+        color: white;
+        position: center;
+      }
 
+      .container {
+        position: relative;
+        height: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+
+      <ul class="sidenav">
+        <li><a href="https://tommyjasson.github.io/Home/" class="Body2"> Home</a></li>
+        <li><a href="https://tommyjasson.github.io/About-Me/" class="Body2"> About Me</a></li>
+        <li><a class="active Body2" href="#Interests"> Interests</a></li>
+        <li><a href="#Projects" class="Body2"> Projects</a></li>
+        <li><a href="#Contact" class="Body2"> Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="container">
+
+      </div>
+      <div id="home">
+
+        <div class="text3">
+
+          <h1 class="text1 Header1"> My Projects </h1>
+          
           <p class="text1 Body1"> These are projects i've worked on for a long time, these are my best pieces i believe and they are what represents what im capable of best.
           </p>
           
           
-          <p class="text2 Body1"> Project 1: this was part of a photography project where we needed to capture an ambience of an enviroment.
-          </p>          
-          
-          <img class="img1" src="IMG_6593.JPG" alt="About Me">
+          <table style="width: 100%">
+  <tr>
+    <th>Projects</th>
+    <th>Explanation</th>
+  </tr>
+  <tr>
+    <td> <img class="img1" src="IMG_6593.JPG" alt="About Me"></td>
+    <td class="text2 Body1"> Project 1: <br> this was part of a photography project where we needed to capture an ambience of an enviroment. I took a few shots s\to try and capture the nostalgia and calm abience of the space and this demonstrates it perfectly. It's my best shot.</td>
+  </tr>
+  <tr>
+    <td> <img class="img2" src="PHOTO-2023-12-04-16-00-45.jpg" alt="About Me"> </td>
+    <td class="text3 Body1"> Project 2 <br> This was a design of a couch. I had to make a reconstruction of a type of furniture used in a regular day-basis. I chose to recreate the couch, turning it into a pit enough for whole family's to fit while also have storage. This was my first official design piece where i got to be unique in my creation.</td>
+  </tr>
+    <tr>
+    <td><img class="img3" src="PHOTO-2023-12-04-16-00-46.jpg" alt="About Me"></td>
+    <td class="text4 Body1"> Project 3: this was part of a photography project where we needed to capture an ambience of an enviroment.</td>
+  </tr>
+    <tr>
+    <td><img class="img4" src="PHOTO-2023-12-04-16-00-47.jpg" alt="About Me"></td>
+    <td class="text5 Body1"> Project 4: this was part of a photography project where we needed to capture an ambience of an enviroment.</td>
+  </tr>
+</table>
 
-           <p class="text3 Body1"> Project 2: this was part of a photography project where we needed to capture an ambience of an enviroment.
-          </p>
-          
-          <img class="img2" src="PHOTO-2023-12-04-16-00-45.jpg" alt="About Me">
-
-           <p class="text4 Body1"> Project 2: this was part of a photography project where we needed to capture an ambience of an enviroment.
-          </p>
-          
-           <img class="img3" src="PHOTO-2023-12-04-16-00-46.jpg" alt="About Me">
-
-          <p class="text5 Body1"> Project 2: this was part of a photography project where we needed to capture an ambience of an enviroment.
-          </p>
-          
-          <img class="img4" src="PHOTO-2023-12-04-16-00-47.jpg" alt="About Me">
-
-           </div>
-    </div>  
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 
 </html>
